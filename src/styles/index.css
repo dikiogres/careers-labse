@@ -1,0 +1,18 @@
+.words span{
+    animation: spin_words 7s infinite;
+  }
+  
+  @keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+  }

@@ -20,7 +20,15 @@ export default function Home() {
           <div className='flex sm:flex-row items-center justify-center'>
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#FF0000]">RPL</h1>
+                  <div className='h-12 sm:h-14 md:h-16 lg:h-[72px] overflow-hidden'>
+                    <div className='words'>
+                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+                      <span className='block h-full pl-2 py-2 text-red-500 font-bold'>Rekayasa</span>
+                      <span className='block h-full pl-2 py-2 text-green-500 font-bold'>Perangkat</span>
+                      <span className='block h-full pl-2 py-2 text-blue-500 font-bold'>Lunak</span>
+                    </h1>
+                    </div>
+                  </div>
                     <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl text-black dark:text-white">for everyone</h1>
                     <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
                     <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-white border-2 border-black hover:bg-black hover:text-white dark:text-white dark:bg-gray-900 dark:border-white dark:hover:bg-white dark:hover:text-black ">

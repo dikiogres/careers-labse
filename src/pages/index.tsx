@@ -1,11 +1,29 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import React, { useState, useEffect } from 'react';
 import Layout from '@/components/layout/Layout'
 
-import PhoneMockup from '../../public/phone-mockup.png'
+import image1 from '../../public/career/CAREER1.jpg'
+import image2 from '../../public/career/CAREER2.jpg'
+import image3 from '../../public/career/CAREER3.jpg'
+import image4 from '../../public/career/CAREER4.jpg'
+import image5 from '../../public/career/CAREER5.jpg'
+import image6 from '../../public/career/CAREER6.jpg'
+import image7 from '../../public/career/CAREER7.jpg'
+
+const images:any = [image1, image2, image3, image4, image5, image6, image7];
 
 export default function Home() {
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentImage]);
+
   return (
     <>
       <Head>
@@ -17,21 +35,21 @@ export default function Home() {
       <Layout>
       <main className='overflox-x-hidden'>
         <section className='min-h-screen '>
-          <div className='flex sm:flex-row items-center justify-center'>
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                <div className="mr-auto place-self-center lg:col-span-7">
-                  <div className='h-12 sm:h-14 md:h-16 lg:h-[72px] overflow-hidden'>
+          <div className='flex flex-col sm:flex-row items-center justify-center min-h-screen'>
+            {/* <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"> */}
+                <div className="place-self-center mx-auto ">
+                  <div className='h-[84px] sm:h-[96px] md:h-[108px] lg:h-[144px] overflow-hidden'>
                     <div className='words'>
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-                      <span className='block h-full pl-2 py-2 text-red-500 font-bold'>Rekayasa</span>
-                      <span className='block h-full pl-2 py-2 text-green-500 font-bold'>Perangkat</span>
-                      <span className='block h-full pl-2 py-2 text-blue-500 font-bold'>Lunak</span>
+                      <span className='block h-full pl-2 py-4 text-red-500 font-bold text-[64px] sm:text-[72px] md:text-[84px] lg:text-[96px]'>Rekayasa</span>
+                      <span className='block h-full pl-2 py-4 text-green-500 font-bold text-[64px] sm:text-[72px] md:text-[84px] lg:text-[96px]'>Perangkat</span>
+                      <span className='block h-full pl-2 py-4 text-blue-500 font-bold text-[64px] sm:text-[72px] md:text-[84px] lg:text-[96px]'>Lunak</span>
                     </h1>
                     </div>
                   </div>
                     <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl text-black dark:text-white">for everyone</h1>
                     <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
-                    <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-white border-2 border-black hover:bg-black hover:text-white dark:text-white dark:bg-gray-900 dark:border-white dark:hover:bg-white dark:hover:text-black ">
+                    <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-white border-2 border-black hover:bg-black hover:text-white dark:text-white dark:bg-gray-900 dark:border-white dark:hover:bg-white dark:hover:text-black transform duration-500 hover:scale-105 hover:shadow-2xl">
                         Pelatihan
                         <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </a>
@@ -39,10 +57,12 @@ export default function Home() {
                         Oprec Camin
                     </a> 
                 </div>
-                <div className="lg:mt-0 lg:col-span-5 sm:flex order-first sm:order-last ">
-                    <Image src={PhoneMockup} alt="mockup" width={512} height={512}/>
+                <div className="lg:mt-0 lg:col-span-5 sm:flex order-first sm:order-last mx-auto sm:pr-16 mb-16">
+                <div className="relative h-[256px] w-[256px] md:h-[384px] md:w-[384px] rounded-full overflow-hidden shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl ">
+                  <Image src={images[currentImage]} className="animation-fade duration-1000 ease-in-out absolute inset-0 h-full w-full object-cover" alt="img" />
+                </div>
                 </div>                
-            </div>
+            {/* </div> */}
           </div>
         </section>
       </main>

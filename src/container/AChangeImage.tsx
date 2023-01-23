@@ -24,8 +24,10 @@ export const AChangeImage = () => {
     }, [currentImage]);
   
   return (
-    <div className="relative h-[256px] w-[256px] md:h-[384px] md:w-[384px] rounded-full overflow-hidden shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl ">
-    <Image src={images[currentImage]} className="animation-fade duration-1000 ease-in-out absolute inset-0 h-full w-full object-cover" alt="img" />
+    <div className="sun relative h-[256px] w-[256px] md:h-[384px] md:w-[384px] rounded-full overflow-hidden shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl ">
+      <div className="">
+        <Image src={images[currentImage]} className="animation-fade duration-1000 ease-in-out absolute inset-0 h-full w-full object-cover" alt="img" />
+      </div>    
   </div>
   )
 }

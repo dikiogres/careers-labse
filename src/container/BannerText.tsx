@@ -23,7 +23,7 @@ export const BannerText = () => {
                         </a>
                     </div>
                     <div className='shadow rounded-lg transition duration-500 hover:scale-105 '>
-                        <a href="https://forms.gle/tPpCxjYjFzoLFq8GA" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white dark:text-gray-900 bg-gray-900 dark:bg-white rounded focus:outline-none ">
+                        <a href="https://forms.gle/tPpCxjYjFzoLFq8GA" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white dark:text-gray-900 bg-gray-900 dark:bg-white rounded focus:outline-none transition duration-500">
                             Oprec Camin
                         </a>
                     </div>

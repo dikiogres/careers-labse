@@ -17,9 +17,11 @@ export const BannerText = () => {
                 <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
                 <div className='flex gap-3'>
                     <div className=''>
-                        <a href="https://forms.gle/CuPdfmZMydmYyiFp6" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-black rounded-lg bg-white border-2 border-black hover:bg-black hover:text-white dark:text-white dark:bg-gray-900 dark:border-white dark:hover:bg-white dark:hover:text-black transform duration-500 hover:scale-105 hover:shadow-2xl">
-                            Pelatihan
-                        <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <a href="https://forms.gle/CuPdfmZMydmYyiFp6" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-white dark:bg-red-500 dark:border-red-500 dark:hover:bg-white dark:hover:text-red-500 transform duration-500 hover:scale-105 hover:shadow-2xl">
+                            <svg className="w-6 h-6 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                            </svg>
+                            <p>Record Pelatihan</p>
                         </a>
                     </div>
                     <div className='shadow rounded-lg transition duration-500 hover:scale-105 '>

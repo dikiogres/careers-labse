@@ -3,35 +3,7 @@ import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
-const qa = [
-  {
-    question: "What is your refund policy?",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "How do I cancel my subscription?",
-    answer:
-      "Send us a message and we'll process your request no questions asked.",
-  },
-  {
-    question: "Do you offer discounts for nonprofits?",
-    answer:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos necessitatibus eligendi impedit sapiente distinctio qui voluptatum consequuntur explicabo officia, rem saepe in, beatae odio sint iusto! Enim at fugit blanditiis.",
-  },
-  {
-    question: "Can I upgrade or downgrade my subscription?",
-    answer: "Yes! Send us a message and we'll get you all set up.",
-  },
-  {
-    question: "Do you offer discounts for multiple team members?",
-    answer: "Absolutely! Send us a message and we'll get you all set up.",
-  },
-  {
-    question: "Do you offer discounts for students?",
-    answer: "We sure do! Send us a message and we'll get you all set up.",
-  },
-];
+import { qa }from "../data/faq.data"
 
 export default function Faq() {
   return (

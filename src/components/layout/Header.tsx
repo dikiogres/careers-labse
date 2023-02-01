@@ -38,7 +38,7 @@ const Header = () => {
     }
 
     return (
-        <header className='sticky top-0 z-50 border-b  border-gray-300 dark:border-gray-700'>
+        <header className='sticky top-0 z-50 border-b bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-700'>
         <div className='container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center'>
             <Link href='/' className='font-bold md:text-2xl hover:text-gray-600'>
                 <div className='flex justify-center items-center'>
@@ -51,7 +51,7 @@ const Header = () => {
 
                 </div>
             </Link>
-
+            
             {renderThemeChanger()}
         </div>
     </header>

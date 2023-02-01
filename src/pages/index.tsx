@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '@/components/layout/Layout'
 import { AChangeImage } from '@/container/AChangeImage';
 import { BannerText } from '@/container/BannerText';
-// import Faq from '@/container/faq';
+import Faq from '@/container/faq';
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
                 <AChangeImage />
               </div>
             </div>
-            {/* <Faq /> */}
+            <Faq />
           </section>
         </main>
       </Layout>

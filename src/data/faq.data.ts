@@ -5,7 +5,7 @@ export const qa = [
     },
     {
         question: "Mas, mau tanya kira kira OPRECnya itu sistemnya gimana dan berapa lama?",
-        answer:"Ini yang harus kalian tahu, jadi sistem OPREC RPL itu beda kaya kepanitiaan atau organisasi ( daftar → seleksi/interview → pengumuman ) yang gaada feedback buat pendaftar. Untuk OPREC RPL sendiri jangka waktunya ±2 bulan, 5 minggu materi & 2 minggu FP. Jadi ngga cuma 'OPREC' aja, tapi ada daging yang tebel juga!",
+        answer:"Ini yang harus kalian tahu, jadi sistem OPREC RPL itu beda kaya kepanitiaan atau organisasi ( daftar → seleksi/interview → pengumuman ) yang gaada feedback buat pendaftar. Untuk durasi rangkaian acara OPREC RPL sendiri jangka waktunya ±2 bulan. Jadi selama itu kita ngga cuma 'OPREC' aja, tapi dapet daging yang tebel juga!",
 
     },
     {

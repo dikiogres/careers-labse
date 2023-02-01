@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdPlayArrow } from "react-icons/md";
 
 export const BannerText = () => {
   return (
@@ -18,9 +19,7 @@ export const BannerText = () => {
                 <div className='flex gap-3'>
                     <div className=''>
                         <a href="https://forms.gle/CuPdfmZMydmYyiFp6" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-white dark:bg-red-500 dark:border-red-500 dark:hover:bg-white dark:hover:text-red-500 transform duration-500 hover:scale-105 hover:shadow-2xl">
-                            <svg className="w-6 h-6 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                            </svg>
+                            <MdPlayArrow className="w-6 h-6 mr-2 -ml-1"/>
                             <p>Record Pelatihan</p>
                         </a>
                     </div>

@@ -18,7 +18,7 @@ export const BannerText = () => {
                 <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
                 <div className='flex gap-3'>
                     <div className=''>
-                        <a href="https://forms.gle/CuPdfmZMydmYyiFp6" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-white dark:bg-red-500 dark:border-red-500 dark:hover:bg-white dark:hover:text-red-500 transform duration-500 hover:scale-105 hover:shadow-2xl">
+                        <a href="https://www.youtube.com/@softwareengineeringlaborat7915/videos" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-white dark:bg-red-500 dark:border-red-500 dark:hover:bg-white dark:hover:text-red-500 transform duration-500 hover:scale-105 hover:shadow-2xl">
                             <MdPlayArrow className="w-6 h-6 mr-2 -ml-1"/>
                             <p>Record Pelatihan</p>
                         </a>

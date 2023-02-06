@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import React from 'react';
-import Layout from '@/components/layout/Layout'
-import { AChangeImage } from '@/container/AChangeImage';
-import { BannerText } from '@/container/BannerText';
-import Faq from '@/container/faq';
-
+import Head from "next/head";
+import React from "react";
+import Layout from "@/components/layout/Layout";
+import { AChangeImage } from "@/container/AChangeImage";
+import { BannerText } from "@/container/BannerText";
+import Faq from "@/container/faq";
+import OprecAnnouncement from "@/container/OprecAnnouncement";
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
         <link rel="icon" href="/Logo.png" />
       </Head>
       <Layout>
-        <main className="overflox-x-hidden">
-          <section className="min-h-screen ">
-            <div className="flex flex-col sm:flex-row items-center justify-center min-h-screen">
+        <main className="overflox-x-hidden space-y-20">
+          <section className=" ">
+            <div className="flex flex-col sm:flex-row items-center justify-center min-h-screen sm:min-h-[80vh]">
               <div className="place-self-center mx-auto ">
                 <BannerText />
               </div>
@@ -26,10 +26,17 @@ export default function Home() {
                 <AChangeImage />
               </div>
             </div>
-            <Faq />
           </section>
+          <p className="relative">
+            <span id="announcement" className="absolute bottom-40"></span>
+          </p>
+          <OprecAnnouncement />
+          <p className="relative">
+            <span id="faq" className="absolute bottom-40"></span>
+          </p>
+          <Faq />
         </main>
       </Layout>
     </>
-  )
+  );
 }

@@ -7,7 +7,7 @@ import { qa }from "../data/faq.data"
 
 export default function Faq() {
   return (
-    <div className="pb-16 gap-y-8 grid md:grid-cols-2 items-center overflow-hidden w-11/12 mx-auto mt-10">
+    <section className="pb-16 gap-y-8 grid md:grid-cols-2 items-center overflow-hidden w-11/12 mx-auto mt-10">
       <div className="py-4 px-1 text-stroke dark:text-stroke-dark uppercase dark:text-white text-[25vw] md:text-[18.65rem] font-mono font-extrabold opacity-30 -z-10 leading-[15vw] md:leading-[9.6rem]">
         <p>RPL</p>
         <p className="text-end md:translate-x-24">oprec</p>
@@ -46,6 +46,6 @@ export default function Faq() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

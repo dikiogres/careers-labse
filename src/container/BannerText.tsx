@@ -19,12 +19,12 @@ export const BannerText = () => {
             <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl text-black dark:text-white">for everyone</h1>
                 <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
                 <div className='flex flex-col md:flex-row gap-3'>   
-                    <div className='flex items-center justify-center rounded-lg bg-white border-2 shadow-lg border-red-500 duration-300 hover:scale-105 hover:shadow-2xl'>
+                    <div className='flex items-center justify-center rounded-lg bg-white dark:bg-red-500 border-2 shadow-lg border-red-500 duration-300 hover:scale-105 hover:shadow-2xl'>
                         {/* eslint-disable-next-line react/jsx-no-target-blank */}
                         <a href="https://youtu.be/0EfF8IZ_VZw" target='_blank' className={clsx(
                             'inline-flex items-center justify-center px-5 py-3',
                             'text-base font-medium text-center text-red-500',
-                            'dark:text-white dark:bg-red-500 dark:border-red-500',
+                            'dark:text-white  dark:border-red-500',
                         )}>
                              <MdPlayArrow className="w-6 h-6 mr-2 -ml-1 flex-shrink-0"/>
                             <p>Record Pelatihan</p>

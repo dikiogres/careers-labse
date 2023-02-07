@@ -1,5 +1,7 @@
 import React from 'react'
 import { MdPlayArrow } from "react-icons/md";
+import { FaDiscord } from "react-icons/fa";
+import clsx from 'clsx';
 
 export const BannerText = () => {
   return (
@@ -16,16 +18,27 @@ export const BannerText = () => {
             <div>
             <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl text-black dark:text-white">for everyone</h1>
                 <p className="max-w-2xl mb-6 font-sm text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Find your future at RPL.</p>
-                <div className='flex gap-3'>
-                    <div className=''>
-                        <a href="https://youtu.be/0EfF8IZ_VZw" className="inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-white dark:bg-red-500 dark:border-red-500 dark:hover:bg-white dark:hover:text-red-500 transform duration-500 hover:scale-105 hover:shadow-2xl">
-                            <MdPlayArrow className="w-6 h-6 mr-2 -ml-1"/>
+                <div className='flex flex-col md:flex-row gap-3'>   
+                    <div className='flex items-center justify-center rounded-lg bg-white border-2 shadow-lg border-red-500 duration-300 hover:scale-105 hover:shadow-2xl'>
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        <a href="https://youtu.be/0EfF8IZ_VZw" target='_blank' className={clsx(
+                            'inline-flex items-center justify-center px-5 py-3',
+                            'text-base font-medium text-center text-red-500',
+                            'dark:text-white dark:bg-red-500 dark:border-red-500',
+                        )}>
+                             <MdPlayArrow className="w-6 h-6 mr-2 -ml-1 flex-shrink-0"/>
                             <p>Record Pelatihan</p>
                         </a>
                     </div>
-                    <div className='shadow rounded-lg transition duration-500 hover:scale-105 '>
-                        <a href="https://forms.gle/tPpCxjYjFzoLFq8GA" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white dark:text-gray-900 bg-gray-900 dark:bg-white rounded focus:outline-none transition duration-500">
-                            Oprec Camin
+                    <div className='flex items-center justify-center rounded-lg transition duration-300 hover:scale-105 shadow-lg hover:shadow-2xl bg-[#5562EA] dark:bg-white'> 
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        <a href="https://discord.gg/UBuk7Afy" target='_blank' className={clsx(
+                            'inline-flex items-center justify-center px-5 py-3 rounded-md',
+                            'text-base font-medium text-center text-white',
+                            'dark:text-[#5562EA]',
+                        )}>
+                            <FaDiscord className="w-6 h-6 mr-2 -ml-1 flex-shrink-0"/>
+                            <p>Join Our Discord Server!</p>
                         </a>
                     </div>
                 </div>

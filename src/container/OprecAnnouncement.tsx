@@ -2,6 +2,7 @@ import { Participant, Status, participant } from "@/data/participant.data";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import React from "react";
+import { BsLine } from "react-icons/bs";
 
 const OprecStatusModal = ({
   isOpen,
@@ -74,8 +75,25 @@ const OprecStatusModal = ({
                         Kamu <b className="text-teal-500">lolos</b> proses
                         seleksi
                       </p>
-                      <p className="text-gray-400 ">
-                        Segera join discord kita untuk mendapatkan role <br /> dan
+                      <div className="flex justify-center items-center pt-2">
+                        <button>
+                          {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                          <a href="https://line.me/R/ti/g/hH5edVUKQz" target='_blank'>
+                            <div className="flex p-2 gap-2 rounded-md bg-green-500">
+                              <p className="font-semibold text-white">Coba Pencet</p>
+                              <div className="bg-green-500 rounded-md">
+                                <div className="text-white text-2xl rounded-md">
+                                  <BsLine/>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </button>
+                      </div>
+                      <span className="text-xs text-gray-400 hidden md:inline">*Feature only available on mobile version</span>
+                      <p className="text-gray-400 pt-2">
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        Jangan lupa untuk segera join <a href="https://discord.gg/UBuk7Afy" target='_blank'><span className="text-[#5562EA] dark:bg-white dark:rounded-md dark:px-1 font-semibold underline hover:no-underline active:underline">Discord</span></a> kita agar mendapatkan role dan 
                         mengikuti proses seleksi berikutnya.
                       </p>
                     </div>

@@ -1,5 +1,6 @@
 import { Participant, Status, participant } from "@/data/participant.data";
 import { Dialog, Transition } from "@headlessui/react";
+import clsx from "clsx";
 import React from "react";
 
 const OprecStatusModal = ({
@@ -123,7 +124,7 @@ export default function OprecAnnouncement() {
         closeModal={() => setOpen(false)}
         participant={findedParticipant}
       />
-      <div className="p-5 border w-full max-w-sm bg-white text-center dark:bg-slate-600 shadow-sm flex-col rounded-lg dark:border-slate-400 space-y-4 ">
+      <div className="p-5 border w-full max-w-sm bg-white text-center dark:bg-slate-600 shadow-red-500 shadow-sm flex-col rounded-lg dark:border-slate-400 space-y-4 transition duration-500 hover:shadow-red-500 hover:shadow-xl hover:scale-105 dark:shadow-teal-500 dark:shadow-md dark:hover:shadow-teal-500 dark:hover:shadow-xl dark:scale-100 dark:hover:scale-105">
         <div className="w-fit mx-auto ">
           <h2 className="typewriter text-red-500 dark:text-teal-500 font-bold text-2xl sm:text-4xl">
             Hasil Seleksi Berkas
@@ -147,7 +148,13 @@ export default function OprecAnnouncement() {
             onChange={(e) => setNrp(e.currentTarget.value)}
           />
           <button
-            className="px-2 py-2 text-red-500 rounded-lg bg-white border-2 border-red-500 hover:bg-red-500 hover:text-white dark:text-teal-400 dark:bg-slate-600 dark:border-teal-500 dark:hover:bg-teal-500 dark:hover:text-white transition-all duration-200"
+            className={clsx(
+              "p-2 font-semibold rounded-lg",
+              "text-white bg-red-500 border-2 border-red-500",
+              "dark:text-bg-slate-600 dark:bg-teal-500 dark:border-teal-500",
+              "transition-all duration-500 hover:animate-pulse",
+              "hover:bg-red-500 hover:text-white dark:hover:bg-teal-500 dark:hover:text-white"
+            )}
             onClick={handleSubmit}
           >
             Lihat Status

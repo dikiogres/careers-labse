@@ -1,11 +1,10 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "@/components/layout/Layout";
-import { AChangeImage } from "@/container/AChangeImage";
-import { BannerText } from "@/container/BannerText";
-import Faq from "@/container/faq";
-import OprecAnnouncement from "@/container/OprecAnnouncement";
 import clsx from "clsx";
+import CardLink from "@/components/CardLink";
+
+import { CardLinkData } from "@/data/cardLink.data";
 
 export default function Home() {
   return (
@@ -18,33 +17,27 @@ export default function Home() {
       </Head>
       <Layout>
         <main className="overflox-x-hidden space-y-20">
-          <section id='linktree' className="layout flex min-h-screen items-center justify-center">
+          <section id='linktree' className="layout flex min-h-screen items-center justify-center my-5">
             <div className={clsx(
               "flex flex-col items-center justify-center",
-              "w-[512px] bg-gray-900 p-10 rounded shadow-lg",
+              "w-[512px] bg-gray-900 p-10 rounded shadow-xl",
+              "dark:bg-gray-200"
             )}>
               <div className="layout flex flex-col items-center justify-center">
-                <p className="text-gray-400 text-xs">Kumpulan Link Penting</p>
+                <p className="text-gray-400 dark:text-gray-500 text-xs">Kumpulan Link Penting</p>
                 <p className={clsx(
-                  "text-white font-semibold text-2xl text-center"
+                  "text-white font-semibold text-2xl text-center",
+                  "dark:text-gray-900"
                 )}>Open Recruitment RPL 2023</p>
               </div>
               <div className={clsx(
                 "p-10 mt-5 w-11/12 rounded bg-gray-500"
               )}>
-                <div>
-                  <a href="">
-                    <div className={clsx(
-                      "flex justify-between",
-                      "py-3 px-5 rounded-full text-white  bg-gray-700",
-                      "transition duration-500",
-                      "hover:bg-gray-600 hover:scale-95"
-                    )}>
-                      <p className="font-medium">Modul 1</p>
-                      <p>ICON</p>
-                    </div>
-                  </a>
-                </div>
+                {CardLinkData?.map((item) => (
+                  <div key={item.id} className='py-2'>
+                    <CardLink product={item} />
+                  </div>
+                ))}
               </div>
             </div>
           </section>

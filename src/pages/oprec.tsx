@@ -13,6 +13,7 @@ export default function Home() {
         <title>Open Recruitment</title>
         <meta name="description" content="Raih masa depanmu bersama RPL" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/mera.jpg" />
         <link rel="icon" href="/Logo.png" />
       </Head>
       <Layout>

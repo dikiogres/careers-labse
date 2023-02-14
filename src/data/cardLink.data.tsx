@@ -19,18 +19,12 @@ export const CardLinkData = [
       title: 'Record Materi BE',
       icon: <SiYoutube/>
     },
-    // { 
-    //   id: 4,
-    //   link: 'https://docs.google.com/spreadsheets/d/17h_xyLIwOkTmBWlUX1wiz9U1-hn3FP2qxJSoMP-83NU/edit#gid=504585426',
-    //   title: 'Informasi Plotting',
-    //   icon: <SiGooglesheets/>
-    // },
     { 
-        id: 4,
-        link: '/comingsoon',
-        title: 'Informasi Plotting',
-        icon: <SiGooglesheets/>
-      },
+      id: 4,
+      link: 'https://docs.google.com/spreadsheets/d/17h_xyLIwOkTmBWlUX1wiz9U1-hn3FP2qxJSoMP-83NU/edit#gid=504585426',
+      title: 'Informasi Plotting',
+      icon: <SiGooglesheets/>
+    },
     { 
       id: 5,
       link: 'https://github.com/dzikrisyairozi/modul-next-ts/tree/main/modul-1',

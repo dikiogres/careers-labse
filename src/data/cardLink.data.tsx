@@ -37,4 +37,16 @@ export const CardLinkData = [
       title: 'Modul 1 BE',
       icon: <SiGithub/>
     },
+        { 
+      id: 7,
+      link: 'https://github.com/dzikrisyairozi/modul-next-ts/tree/main/modul-2',
+      title: 'Modul 2 FE',
+      icon: <SiGithub/>
+    },
+    { 
+      id: 8,
+      link: 'https://github.com/Lab-RPL-ITS/modul-golang/blob/main/web-server-dan-api.md',
+      title: 'Modul 2 BE',
+      icon: <SiGithub/>
+    },
   ]

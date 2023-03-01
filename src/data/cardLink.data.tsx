@@ -45,8 +45,21 @@ export const CardLinkData = [
     },
     { 
       id: 8,
-      link: 'https://github.com/Lab-RPL-ITS/modul-golang/blob/main/web-server-dan-api.md',
+      link: 'https://github.com/godlixe/modul-go/blob/main/web-server-dan-api.md',
       title: 'Modul 2 BE',
+      icon: <SiGithub/>
+    },
+        },
+        { 
+      id: 9,
+      link: 'https://github.com/dzikrisyairozi/modul-next-ts/tree/main/modul-3',
+      title: 'Modul 3 FE',
+      icon: <SiGithub/>
+    },
+    { 
+      id: 10,
+      link: 'https://github.com/godlixe/modul-go/blob/main/web-framework-dan-orm-packages.md',
+      title: 'Modul 3 BE',
       icon: <SiGithub/>
     },
   ]

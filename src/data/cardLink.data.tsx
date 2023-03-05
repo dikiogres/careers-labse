@@ -49,8 +49,7 @@ export const CardLinkData = [
       title: 'Modul 2 BE',
       icon: <SiGithub/>
     },
-        },
-        { 
+    { 
       id: 9,
       link: 'https://github.com/dzikrisyairozi/modul-next-ts/tree/main/modul-3',
       title: 'Modul 3 FE',
